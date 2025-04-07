@@ -7,13 +7,13 @@ const PlayerCard = ({ player, sport }) => {
       <Card sx={{ minWidth: 275, m: 2 }}>
         <CardContent>
           <Typography variant="h5" component="div">
-            {player.name}
+            {player.player?.name || player.name}
           </Typography>
           <Typography color="text.secondary">
-            Age: {player.age}
+            Age: {player.player?.age || player.age || 'N/A'}
           </Typography>
           <Typography>
-            Nationality: {player.nationality}
+            Nationality: {player.player?.nationality || player.nationality || 'N/A'}
           </Typography>
           <Typography>
             Team: {player.statistics?.[0]?.team?.name || 'N/A'}
@@ -33,10 +33,10 @@ const PlayerCard = ({ player, sport }) => {
           {player.firstname} {player.lastname}
         </Typography>
         <Typography color="text.secondary">
-          Birth: {player.birth?.date || 'N/A'}
+          Age: {player.age || new Date().getFullYear() - new Date(player.birth?.date).getFullYear() || 'N/A'}
         </Typography>
         <Typography>
-          Country: {player.birth?.country || 'N/A'}
+          Nationality: {player.nationality || player.birth?.country || 'N/A'}
         </Typography>
         <Typography>
           Team: {player.team?.name || 'N/A'}
