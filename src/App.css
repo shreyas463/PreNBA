@@ -1,9 +1,41 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #89ABE3;
 }
 
 .App {
   min-height: 100vh;
+}
+
+.search-box .MuiOutlinedInput-root {
+  background-color: white;
+}
+
+.search-box .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #EA738D;
+}
+
+.search-box .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #EA738D;
+}
+
+.search-button {
+  background-color: #EA738D !important;
+}
+
+.search-button:hover {
+  background-color: #d65d77 !important;
+}
+
+.MuiTab-root {
+  color: white !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #EA738D !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #EA738D !important;
 }

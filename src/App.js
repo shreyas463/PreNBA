@@ -29,9 +29,9 @@ function App() {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', borderRadius: 3, py: 4, mt: 4 }}>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom align="center">
+        <Typography variant="h3" component="h1" gutterBottom align="center" sx={{ color: 'white' }}>
           Sports Player Info
         </Typography>
 
@@ -52,9 +52,15 @@ function App() {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+            className="search-box"
+            sx={{
+              '& label': { color: 'white' },
+              '& label.Mui-focused': { color: '#EA738D' }
+            }}
           />
           <Button
             variant="contained"
+            className="search-button"
             onClick={handleSearch}
             disabled={loading}
             sx={{ minWidth: 120 }}
@@ -64,7 +70,7 @@ function App() {
         </Box>
 
         {error && (
-          <Typography color="error" align="center" sx={{ mb: 2 }}>
+          <Typography color="error" align="center" sx={{ mb: 2, color: '#EA738D' }}>
             {error}
           </Typography>
         )}
@@ -78,7 +84,7 @@ function App() {
             />
           ))}
           {players.length === 0 && !loading && !error && (
-            <Typography align="center" color="text.secondary">
+            <Typography align="center" sx={{ color: 'rgba(255, 255, 255, 0.7)' }}>
               Please enter a player name to search.
             </Typography>
           )}

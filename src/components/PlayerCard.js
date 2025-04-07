@@ -4,7 +4,7 @@ import { Card, CardContent, Typography } from '@mui/material';
 const PlayerCard = ({ player, sport }) => {
   if (sport === 'football') {
     return (
-      <Card sx={{ minWidth: 275, m: 2 }}>
+      <Card sx={{ minWidth: 275, m: 2, backgroundColor: 'rgba(255, 255, 255, 0.9)' }}>
         <CardContent>
           <Typography variant="h5" component="div">
             {player.player?.name || player.name}
