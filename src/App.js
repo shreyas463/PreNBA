@@ -79,7 +79,7 @@ function App() {
           ))}
           {players.length === 0 && !loading && !error && (
             <Typography align="center" color="text.secondary">
-              No players found. Try searching for a player name.
+              Please enter a player name to search.
             </Typography>
           )}
         </Box>
