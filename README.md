@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# 🏀⚽ Sports Info App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive web application that allows users to search for and view information about Premier League and NBA players using the API-Sports API.
 
-## Available Scripts
+![Sports Info App](https://github.com/shreyas463/PreNBA/raw/main/preview.png)
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🔄 Real-time player search
+- ⚽ Premier League player information
+- 🏀 NBA player information
+- 🎨 Clean, modern Material-UI interface
+- 📱 Responsive design
+- ⚡ Fast and efficient API integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Quick Start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/shreyas463/PreNBA.git
+   cd PreNBA
+   ```
 
-### `npm test`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Set up your API key**
+   - Open `src/api/config.js`
+   - Replace the API key if needed (current key is already set up)
 
-### `npm run build`
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Open your browser**
+   - Navigate to [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔍 How to Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Select Sport**
+   - Choose between Premier League and NBA using the tabs at the top
 
-### `npm run eject`
+2. **Search for Players**
+   - Type a player's name in the search bar
+   - Press Enter or click the Search button
+   - View player information in the cards below
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **View Player Details**
+   - Each card shows:
+     - Player name
+     - Age/Birth date
+     - Team
+     - Position
+     - Nationality/Country
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- React
+- Material-UI
+- Axios
+- API-Sports API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📝 API Usage Notes
 
-## Learn More
+- The application uses the API-Sports API
+- There are rate limits on API calls
+- Please refer to [API-Sports documentation](https://api-sports.io/documentation) for more details
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Code Splitting
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
-### Analyzing the Bundle Size
+## 👥 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Project Link: [https://github.com/shreyas463/PreNBA](https://github.com/shreyas463/PreNBA)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⭐ Star this repo if you find it helpful!
