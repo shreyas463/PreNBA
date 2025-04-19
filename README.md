@@ -75,6 +75,15 @@ A modern, responsive web application that allows users to search for and view in
 - There are rate limits on API calls
 - Please refer to [API-Sports documentation](https://api-sports.io/documentation) for more details
 
+## 🔮 Future Work
+
+- **Match Tickets**: Integration with ticketing platforms to allow users to purchase tickets for upcoming matches
+- **Team Merchandise**: E-commerce functionality to browse and buy official team merchandise
+- **Live Scores**: Real-time match scores and statistics
+- **Player Comparison**: Side-by-side comparison of player statistics
+- **Favorite Players**: Allow users to save their favorite players for quick access
+- **User Accounts**: Personalized experience with user registration and profiles
+
 ## 🤝 Contributing
 
 1. Fork the repository
