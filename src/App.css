@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #89ABE3;
+  overflow-x: hidden;
 }
 
 .App {
@@ -9,11 +10,22 @@ body {
 }
 
 .search-box .MuiOutlinedInput-root {
-  background-color: white;
+  background-color: rgba(106, 127, 219, 0.3);
+  backdrop-filter: blur(5px);
+  color: white;
+  border-radius: 8px;
 }
 
 .search-box .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
   border-color: #EA738D;
+}
+
+.search-box .MuiInputBase-input {
+  color: white !important;
+}
+
+.search-box .MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 .search-box .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
@@ -22,6 +34,10 @@ body {
 
 .search-button {
   background-color: #EA738D !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
 }
 
 .search-button:hover {
