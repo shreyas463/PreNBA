@@ -1,6 +1,6 @@
 # 🏀⚽ Sports Info App
 
-A modern, responsive web application that allows users to search for and view information about Premier League and NBA players using the API-Sports API.
+A modern, responsive web application that allows users to search for and view information about Premier League and NBA players using the API-Sports API. Features an eye-catching animated background with floating sports icons and player images for an immersive experience.
 
 ![Sports Info App](https://github.com/shreyas463/PreNBA/raw/main/preview.png)
 
@@ -9,6 +9,9 @@ A modern, responsive web application that allows users to search for and view in
 - 🔄 Real-time player search
 - ⚽ Premier League player information
 - 🏀 NBA player information
+- 🖼️ Player images and profile photos
+- 🎭 Animated background with floating sports icons
+- 🌈 Beautiful glass-morphism UI design
 - 🎨 Clean, modern Material-UI interface
 - 📱 Responsive design
 - ⚡ Fast and efficient API integration
@@ -50,6 +53,7 @@ A modern, responsive web application that allows users to search for and view in
 
 3. **View Player Details**
    - Each card shows:
+     - Player photo/image
      - Player name
      - Age/Birth date
      - Team
@@ -61,6 +65,8 @@ A modern, responsive web application that allows users to search for and view in
 - React
 - Material-UI
 - Axios
+- CSS Animations
+- Glass-morphism design
 - API-Sports API
 
 ## 📝 API Usage Notes
