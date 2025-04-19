@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Container, TextField, Typography, Button, Tab, Tabs, CircularProgress } from '@mui/material';
 import PlayerCard from './components/PlayerCard';
+import AnimatedBackground from './components/AnimatedBackground';
 import { searchPremierLeaguePlayers, searchNBAPlayers } from './api/sportsApi';
 import './App.css';
 
@@ -29,9 +30,23 @@ function App() {
   };
 
   return (
-    <Container maxWidth="md" sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', borderRadius: 3, py: 4, mt: 4 }}>
+    <>
+      <AnimatedBackground />
+      <Container maxWidth="md" sx={{ 
+        backgroundColor: 'rgba(106, 127, 219, 0.25)', 
+        backdropFilter: 'blur(10px)', 
+        borderRadius: 16, 
+        py: 4, 
+        mt: 4, 
+        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)',
+        border: '1px solid rgba(255, 255, 255, 0.18)'
+      }}>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom align="center" sx={{ color: '#EA738D' }}>
+        <Typography variant="h3" component="h1" gutterBottom align="center" sx={{ 
+          color: '#EA738D',
+          fontWeight: 'bold',
+          textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)'
+        }}>
           Sports Player Info
         </Typography>
 
@@ -91,6 +106,7 @@ function App() {
         </Box>
       </Box>
     </Container>
+    </>
   );
 }
 
