@@ -18,12 +18,30 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const result = sport === 'football'
-        ? await searchPremierLeaguePlayers(searchTerm)
-        : await searchNBAPlayers(searchTerm);
+      let result;
+      if (sport === 'football') {
+        result = await searchPremierLeaguePlayers(searchTerm);
+      } else {
+        // NBA search
+        console.log('Initiating NBA player search for:', searchTerm);
+        result = await searchNBAPlayers(searchTerm);
+        console.log('NBA search result:', result);
+        
+        // Check if we got results
+        if (result.length === 0) {
+          console.log('No NBA players found with that name');
+        }
+      }
+      
       setPlayers(result || []);
+      
+      // Show a message if no players were found
+      if ((result || []).length === 0) {
+        setError(`No ${sport === 'football' ? 'Premier League' : 'NBA'} players found with the name "${searchTerm}". Try a different name.`);
+      }
     } catch (err) {
-      setError('Error fetching player data. Please try again.');
+      console.error('Search error:', err);
+      setError(`Error fetching ${sport === 'football' ? 'Premier League' : 'NBA'} player data. Please try again.`);
       setPlayers([]);
     }
     setLoading(false);
